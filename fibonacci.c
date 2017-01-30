@@ -2,6 +2,7 @@
 // EECS 338 HW1: Fibonacci Sequence
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int fibonacci(int index);
 
@@ -17,5 +18,5 @@ int fibonacci(int index) {
 		return 0;
 	else if(index == 1)
 		return 1;
-	return fibonacci(n - 1) + fibonacci(n - 2);
+	return fibonacci(index - 1) + fibonacci(index - 2);
 }
