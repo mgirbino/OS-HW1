@@ -8,7 +8,7 @@ SRC = fibonacci.c
 all:	fibonacci
 
 fibonacci:
-	$(CC) -o $(OUT) $(SRC) $(CFLAGS)
+	$(CC) -o $(OUT) $(SRC) $(CFLAGS)  
 	chmod 755 $(OUT)
 
 clean:
